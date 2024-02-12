@@ -1,0 +1,11 @@
+cat
+Salvador
+black and white
+6
+4
+
+snake
+Mr Slithers
+diamondback colouring
+8
+1
