@@ -28,7 +28,7 @@ int main(int argc, char *argv[]) {
         cout << argv[2] << " could not be opened for writing\n";
         return 1;
     }
-    
+
     copy_and_meow(input, output);
 
     input.close();

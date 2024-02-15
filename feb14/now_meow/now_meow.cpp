@@ -32,8 +32,9 @@ void str_replace(char *str, const char* original, const char* updated) {
 }
 
 void copy_and_meow(istream &in, ostream &out) {
-    char line[256];
-    while (in.getline(line, 256)) {
+    const int MAX_LINE = 1024;
+    char line[MAX_LINE];
+    while (in.getline(line, MAX_LINE)) {
         str_replace(line, "now", "meow");
         out << line << endl;
     }
