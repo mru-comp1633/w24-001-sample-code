@@ -15,7 +15,7 @@ struct Node {
     Node *next;
 };
 
-void insert_after(Node *prev, int num) {
+void insert_after(Node *&prev, int num) {
     // handle the special case of empty list
     if (!prev) {
         prev = new Node;
@@ -34,13 +34,12 @@ int main() {
     // start with the head of 7
     Node *head = NULL; // can be all in one line
 
-    // TODO: Segfault, needs debugging
-//    insert_after(head, 7);
+    insert_after(head, 7);
 
     // manually add the head
-    head = new Node;
-    head->data = 7;
-    head->next = NULL;
+//    head = new Node;
+//    head->data = 7;
+//    head->next = NULL;
     
 
     // add a 10
